@@ -1,0 +1,31 @@
+# Luckysheet 协同增强版 - Robots.txt
+# 指导搜索引擎爬虫如何抓取网站内容
+
+User-agent: *
+Disallow: /lib/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /.git/
+Disallow: /docs/
+
+Allow: /
+Allow: /public/images/
+
+Sitemap: https://luckysheet-crdt.netlify.app/
+
+# 特定搜索引擎配置
+User-agent: Googlebot
+Allow: /
+Disallow: /lib/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /lib/
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /lib/
+
+User-agent: YandexBot
+Allow: /
+Disallow: /lib/
